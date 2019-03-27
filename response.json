@@ -1,0 +1,84 @@
+[
+  {
+    "identifier": "RRkPjGkB7qabOHcfsEyX",
+    "name": "public_channel_no_description",
+    "description": null,
+    "type": "PUBLIC",
+    "membership": "LEADER",
+    "createDate": "2019-03-17T14:30:32-00:00",
+    "lastUpdateDate": "2019-03-17T14:30:43-00:00",
+    "_links": {
+      "self": {
+        "href": "/api/channel/RRkPjGkB7qabOHcfsEyX"
+      },
+      "member": [
+        {
+          "href": "/api/contact/contact1@server.to.chat"
+        },
+        {
+          "href": "/api/contact/contact2@server.to.chat"
+        }
+      ]
+    }
+  },
+  {
+    "identifier": "Jhn-i2kB7qabOHcf0kwc",
+    "name": "private_channel",
+    "description": "no one is in here. It's mine!",
+    "type": "PRIVATE",
+    "membership": "LEADER",
+    "createDate": "2019-03-17T14:33:32-00:00",
+    "lastUpdateDate": "2019-03-17T14:33:43-00:00",
+    "_links": {
+      "self": {
+        "href": "/api/channel/Jhn-i2kB7qabOHcf0kwc"
+      },
+      "member": [
+        {
+          "href": "/api/contact/contact1@server.to.chat"
+        }
+      ]
+    }
+  },
+  {
+    "identifier": "i6qoeGkBtyQiXgJN10L9",
+    "name": "direct_channel",
+    "description": "face to face",
+    "type": "DIRECT",
+    "membership": "FOLLOWER",
+    "createDate": "2019-03-17T14:37:32-00:00",
+    "lastUpdateDate": "2019-03-17T14:37:43-00:00",
+    "_links": {
+      "self": {
+        "href": "/api/channel/i6qoeGkBtyQiXgJN10L9"
+      },
+      "member": [
+        {
+          "href": "/api/contact/contact1@server.to.chat"
+        },
+        {
+          "href": "/api/contact/contact2@server.to.chat"
+        }
+      ]
+    }
+  },
+  {
+    "identifier": "gaqmeGkBtyQiXgJNi0KB",
+    "name": "public_channel",
+    "description": "I'm out of here",
+    "type": "PUBLIC",
+    "membership": "LEAVED",
+    "createDate": "2019-03-17T15:05:32-00:00",
+    "lastUpdateDate": "2019-03-17T15:05:43-00:00",
+    "_links": {
+      "self": {
+        "href": "/api/channel/gaqmeGkBtyQiXgJNi0KB"
+      },
+      "member": [
+        {
+          "href": "/api/contact/contact1@server.to.chat"
+        }
+      ]
+    }
+  }
+]
