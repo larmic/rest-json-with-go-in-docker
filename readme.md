@@ -1,5 +1,6 @@
 # JSON static rest example with Go and Docker
 
+[![Build Status](https://travis-ci.org/larmic/rest-json-with-go-in-docker.svg?branch=master)](https://travis-ci.org/larmic/rest-json-with-go-in-docker)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 An example project to create a Docker image for a Go application containing a static REST service.
