@@ -19,8 +19,8 @@ $ ./build_image.sh
 $ docker run -d -p 8080:8080 --rm --name channel-mock larmic/channel-mock
 
 # access rest api
-curl http://localhost:8080/api/channels
+$ curl http://localhost:8080/api/channels
 
 # stop image
-docker stop channel-mock
+$ docker stop channel-mock
 ```
