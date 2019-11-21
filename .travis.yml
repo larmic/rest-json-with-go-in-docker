@@ -4,6 +4,7 @@ language: go
 # These will both be unnecessary when Go 1.14 lands.
 env:
   global:
+    - GOPROXY=https://proxy.golang.org
     - GO111MODULE=on
     - GOARCH=amd64
     - GO_FOR_RELEASE=1.13
