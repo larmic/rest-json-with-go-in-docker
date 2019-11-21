@@ -13,10 +13,6 @@ git:
 
 install: true
 
-before_install:
-  - curl -L -s https://github.com/golang/dep/releases/download/v${DEP_VERSION}/dep-linux-amd64 -o $GOPATH/bin/dep
-  - chmod +x $GOPATH/bin/dep
-
 before_script:
   - go install github.com/gorilla/mux v1.7.3
 
