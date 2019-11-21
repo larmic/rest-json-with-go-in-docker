@@ -11,6 +11,9 @@ env:
 go:
   - 1.13.x
 
+git:
+  depth: 1
+
 before_script:
   - go get github.com/gorilla/mux v1.7.3
 
