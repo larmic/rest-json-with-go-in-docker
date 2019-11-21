@@ -16,11 +16,11 @@ An example project to create a Docker image for a Go application containing a st
 $ ./build_image.sh
 
 # run image
-$ docker run -d -p 8080:8080 --rm --name channel-mock larmic/channel-mock
+$ docker run -d -p 8080:8080 --rm --name larmic-rest-mock larmic/rest-json-with-go-in-docker-example
 
 # access rest api
 $ curl http://localhost:8080/api/channels
 
 # stop image
-$ docker stop channel-mock
+$ docker stop larmic-rest-mock
 ```

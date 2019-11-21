@@ -6,11 +6,11 @@ FROM golang:1.13 AS builder
 LABEL stage=intermediate
 RUN go version
 
-COPY app.go Gopkg.toml /go/src/larmic/
 WORKDIR /go/src/larmic/
-RUN set -x && \
-    go get github.com/golang/dep/cmd/dep && \
-    dep ensure -v
+
+COPY app.go go.mod go.sum /go/src/larmic/
+
+RUN go mod download
 
 # CGO_ENABLED=0   -> Disable interoperate with C libraries -> speed up build time! Enable it, if dependencies use C libraries!
 # GOOS=linux      -> compile to linux because scratch docker file is linux
