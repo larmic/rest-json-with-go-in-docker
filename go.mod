@@ -1,4 +1,4 @@
-module larmic/rest-json-with-go-in-docker-example
+module rest-json-with-go-in-docker-example
 
 go 1.13
 
