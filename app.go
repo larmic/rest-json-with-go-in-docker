@@ -21,7 +21,7 @@ type HateoasLink struct {
 type Channel struct {
 	Identifier     string      `json:"identifier"`
 	Name           string      `json:"name"`
-	Description    *string     `json:"description"`
+	Description    string     `json:"description"`
 	Type           string      `json:"type"`
 	Membership     string      `json:"membership"`
 	CreateDate     string      `json:"createDate"`
