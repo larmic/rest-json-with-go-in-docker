@@ -8,19 +8,32 @@ An example project to create a Docker image for a Go application containing a st
 ## Requirements
 
 * Docker 
+* Go 1.14.x (if you want to build it without using docker builder)
 
-## Build and run
+## Build it
 
 ```sh 
-# build docker image (result is a < 8MB docker image)
-$ ./build_image.sh
+$ make build            # build native app to ./build folder
 
-# run image
-$ docker run -d -p 8080:8080 --rm --name larmic-rest-mock larmic/rest-json-with-go-in-docker-example
+$ make docker-build     # build local docker image
+$ make docker-push      # push local docker image to hub.docker.com
+$ make docker-all       # build and push docker image to hub.docker.com
 
-# access rest api
-$ curl http://localhost:8080/api/channels
+$ make clean            # clean up go and build folder
+```
 
-# stop image
-$ docker stop larmic-rest-mock
+# Run it native
+
+```sh 
+$ make run                                  # start native app 
+$ curl http://localhost:8080/api/channels   # call rest service
+$ ctrl+c                                    # stop native app
+```
+
+# Run it using docker
+
+```sh 
+$ make docker-run                           # start docker image 
+$ curl http://localhost:8080/api/channels   # call rest service
+$ make docker-stop                          # stop and remove docker app
 ```
