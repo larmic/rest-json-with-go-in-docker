@@ -13,13 +13,14 @@ An example project to create a Docker image for a Go application containing a st
 ## Build it
 
 ```sh 
-$ make build            # build native app to ./build folder
+$ make build                        # build native app to ./build folder
+            
+$ make docker-build                 # build local docker image
+$ make docker-push                  # push local docker image to hub.docker.com
+$ make docker-all                   # build and push docker image to hub.docker.com
+$ make IMAGE_TAG="0.0.1" docker-all # build and push docker image with specific version
 
-$ make docker-build     # build local docker image
-$ make docker-push      # push local docker image to hub.docker.com
-$ make docker-all       # build and push docker image to hub.docker.com
-
-$ make clean            # clean up go and build folder
+$ make clean                        # clean up go and build folder
 ```
 
 # Run it native
