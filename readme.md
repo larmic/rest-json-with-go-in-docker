@@ -8,7 +8,7 @@ An example project to create a Docker image for a Go application containing a st
 ## Requirements
 
 * Docker 
-* Go 1.14.x (if you want to build it without using docker builder)
+* Go 1.15.x (if you want to build it without using docker builder)
 
 ## Build it
 
